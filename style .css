@@ -135,6 +135,28 @@ body {
   gap: 8px;
 }
 
+/* Sarcasm slider control */
+.sarcasm-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 8px;
+}
+.sarcasm-control label {
+  font-size: 0.85rem;
+  opacity: 0.85;
+  white-space: nowrap;
+}
+.sarcasm-control input[type="range"] {
+  width: 160px;
+  accent-color: #a78bfa;
+}
+.sarcasm-control #sarcasme-value {
+  min-width: 30px;
+  text-align: center;
+  font-weight: 600;
+}
+
 #user-input {
   flex: 1;
   padding: 10px 12px;
@@ -193,8 +215,14 @@ body {
     margin: 0;
     border-radius: 0;
   }
+  .chat-input-area { flex-wrap: wrap; gap: 6px; }
 
   .message-bubble {
     max-width: 85%;
   }
+}
+.typing-indicator .message-bubble {
+  font-style: italic;
+  opacity: 0.7;
+  background: linear-gradient(135deg, rgba(80,80,80,0.8), rgba(50,50,50,0.8));
 }
